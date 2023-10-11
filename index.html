@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/index.css">
+
   <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Home
-  Shop
-  About
-  Contact
 
-  Discover innovative ways to decorate
+  <header>
+    <img src="/images/logo.svg" alt="">
+    <nav>
+      <ul>
+        <li><a class="link--nav fs--500 fc--black lowercase" href="">Home</a></li>
+        <li><a class="link--nav fs--500 fc--black lowercase" href="">Shop</a></li>
+        <li><a class="link--nav fs--500 fc--black lowercase" href="">About</a></li>
+        <li><a class="link--nav fs--500 fc--black lowercase" href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+  <main class="grid">
 
-  Shop now
+    <div class="hero__image bg-img bg-pos--left"></div>
+    <div class="hero__buttons grid">
+      <button class="btn--slide bg-img bg-pos--center bg--black">
+        <img src="./images/icon-angle-left.svg" alt="">
+      </button>
+      <button class="btn--slide bg-img bg-pos--center bg--black">
+        <img src="./images/icon-angle-right.svg" alt="">
+      </button>
+    </div>
+    <div class="hero__content">
+      <h1 class="fw--600 fc--black fs--900 ls-narrow">Discover innovative ways to decorate</h1>
+      <p class="fs--500">We provide unmatched quality, comfort, and style for property owners across the country.
+        Our experts combine form and function in bringing your vision to life. Create a room in your
+        own style with our collection and make your property a reflection of you and what you love.</p>
 
-  We are available all across the globe
+      <a class="link--shop uppercase fc--black ls-extra-wide fs--500" href="">Shop now</a>
+    </div>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+    <!-- <div>
+      <h1 class="fc--black">We are available all across the globe</h1>
+      <p>With stores all over the world, it's easy for d you to find furniture for your home or place of business.
+        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+        store locator. Any questions? Don't hesitate to contact us today.</p>
+      Shop now
+    </div>
+    <div>
+      <h1 class="fc--black">Manufactured with the best materials</h1>
+      <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+        to ensure that every product is made as perfect and as consistent as possible. With three decades of
+        experience in this industry, we understand what customers want for their home and office.</p>
+      Shop now
+    </div> -->
 
-  Shop now
+    <div class="about__image bg-img bg-pos--center"></div>
+    <div class="about__content">
+      <h2 class="fs--500 fw--700 fc--black uppercase ls-wide">About our furniture</h2>
+      <p class="fs--500">Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+    <div class="about__image bg-img bg-pos--center"></div>
 
-  Manufactured with the best materials
+  </main>
 
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
