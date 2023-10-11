@@ -313,7 +313,7 @@ button {
 .main {
   min-height: 100vh;
   grid-template-columns: auto 112px;
-  grid-template-rows: 304px 56px min-content 238px min-content 227px;
+  grid-template-rows: min-content 56px min-content 238px min-content 227px;
 }
 
 .hero__image-group,
@@ -327,9 +327,14 @@ button {
   grid-row: 1 / 3;
 }
 
+.hero__image {
+  width: 100%;
+}
+
 .hero__image img {
   object-fit: cover;
   margin: 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -389,7 +394,7 @@ button {
 
 @media (min-width: 768px) {
   .main {
-    grid-template-rows: 504px 56px min-content 388px min-content 377px;
+    grid-template-rows: min-content 56px min-content 388px min-content 377px;
   }
 }
 
