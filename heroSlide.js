@@ -1,6 +1,14 @@
 var currIndex = 0;
 showSlide(currIndex);
 
+document.addEventListener('keydown', function (event) {
+  if (event.code == 'ArrowLeft') {
+    changeIndex(-1);
+  } else if (event.code == 'ArrowRight') {
+    changeIndex(+1);
+  }
+});
+
 function changeIndex(n) {
   showSlide(currIndex += n);
 }
