@@ -316,14 +316,14 @@ button {
   grid-template-rows: 304px 56px min-content 238px min-content 227px;
 }
 
-.hero__image,
-.hero__content,
+.hero__image-group,
+.hero__content-group,
 .about__image,
 .about__content {
   grid-column: 1 / 3;
 }
 
-.hero__image {
+.hero__image-group {
   grid-row: 1 / 3;
 }
 
@@ -347,7 +347,7 @@ button {
   background-color: hsl(var(--color--very-dark-gray));
 }
 
-.hero__content {
+.hero__content-group {
   grid-row: 3 / span 1;
   padding: 6rem 3.2rem;
 }
@@ -399,13 +399,13 @@ button {
     grid-template-rows: auto min-content;
   }
 
-  .hero__image,
+  .hero__image-group,
   .hero__buttons,
-  .hero__content {
+  .hero__content-group {
     grid-row: 1 / 2;
   }
 
-  .hero__image {
+  .hero__image-group {
     grid-column: 1 / span 2;
   }
 
@@ -416,7 +416,7 @@ button {
     height: 80px;
   }
 
-  .hero__content {
+  .hero__content-group {
     grid-column: 3 / span 2;
     padding: 12rem 10rem;
   }

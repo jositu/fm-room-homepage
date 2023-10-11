@@ -1,7 +1,7 @@
 var currIndex = 0;
 showSlide(currIndex);
 
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keyup', function (event) {
   if (event.code == 'ArrowLeft') {
     changeIndex(-1);
   } else if (event.code == 'ArrowRight') {
