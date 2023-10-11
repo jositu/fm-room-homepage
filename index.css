@@ -234,7 +234,7 @@ button {
   position: absolute;
   left: 24px;
   background: transparent;
-  background-image: url('../images/icon-hamburger.svg');
+  background-image: url('./images/icon-hamburger.svg');
   background-repeat: no-repeat;
   width: 1.5rem;
   aspect-ratio: 1;
@@ -242,7 +242,7 @@ button {
 }
 
 .btn--nav-toggle[aria-expanded='true'] {
-  background-image: url('../images/icon-close.svg');
+  background-image: url('./images/icon-close.svg');
 }
 
 .navigation {
@@ -374,12 +374,12 @@ button {
 
 .about__image {
   grid-row: 4 / span 1;
-  background-image: url('../images/image-about-dark.jpg');
+  background-image: url('./images/image-about-dark.jpg');
 }
 
 .about__image:last-of-type {
   grid-row: 6 / span 1;
-  background-image: url('../images/image-about-light.jpg');
+  background-image: url('./images/image-about-light.jpg');
 }
 
 .about__content {
